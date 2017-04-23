@@ -1,0 +1,125 @@
+
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} 
+							
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     
+\usepackage{graphicx}                    
+\usepackage[svgnames]{xcolor}            
+\usepackage{geometry}
+	\textheight=700px                    
+\usepackage{url}
+\frenchspacing              
+\pagestyle{empty}           
+\usepackage{sectsty}
+\sectionfont{%			           
+	\usefont{OT1}{phv}{b}{n}%		
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			
+\newcommand{\sepspace}{\vspace*{1em}}		
+
+\newcommand{\MyName}[1]{ 
+		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ 
+		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=2em\hangafter=0 
+		\parbox{\spacebox}{        
+		\textit{#1}}		      
+		\hspace{1.5em} #2 \par}    
+
+\newcommand{\SkillsEntry}[2]{     
+		\noindent\hangindent=2em\hangafter=0 
+		\parbox{\spacebox}{       
+		\textit{#1}}			  
+		\hspace{1.5em} #2 \par}   
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill     
+		\colorbox{Black}{%
+			\parbox{6em}{%
+			\hfill\color{White}#2}} \par  
+		\noindent \textit{#3} \par        
+		\noindent\hangindent=2em\hangafter=0 \small #4 
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  
+		\noindent \textbf{#1} \hfill    
+		\colorbox{Black}{\color{White}#2} \par  
+		\noindent \textit{#3} \par             
+		\noindent\hangindent=2em\hangafter=0 \small #4 
+		\normalsize \par}
+
+\begin{document}
+
+\MyName{Piotr Kieliszek}
+\MySlogan{Curriculum Vitae}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Birth}{February 19, 1995}
+\PersonalEntry{Address}{Ludwika Waryńskiego 10, 00-530 Warszawa}
+\PersonalEntry{Mail}{\url{piotrkielonek@gmail.com}}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{High school}{2011-2014}{1LO im. Ks. A. J. Czartoryskiego in Puławy}{
+School completed with honors}
+\sepspace
+
+\EducationEntry{Studies}{2014-}{Warsaw University of Technology}{Studing Aerospacce Engineering with specialization Aircraft Engines on 
+faculty of Power Engineering and Aviation}
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Work experience}{}
+
+\EducationEntry{Practice}{2017}{Airbus Deffence and Space, Practice}{Practice during studies on faculty of Power Engineering and Aviation}
+\sepspace
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\SkillsEntry{Languages}{Polish (mother tongue)}
+\SkillsEntry{}{English (B2 level)}
+\SkillsEntry{}{German (basic level)}
+\SkillsEntry{}{Russian (basic level)}
+
+\SkillsEntry{Software}{NX10(certificated)}
+\SkillsEntry{}{C++(basic programming)}
+\SkillsEntry{}{Python(basic programming)}
+
+
+%%% References
+%%% ------------------------------------------------------------
+\NewPart{References}{}
+github.com/PiotrKieliszek
+
+\sepspace
+
+\sepspace
+
+\sepspace
+
+\begin{center}
+\small I hereby give consent for my personal data included in my offer to be processed for the purposes of recruitment (in accordance with the Personal Data Protection Act dated 29.08.1997; Journal of Laws of the Republic of Poland 2002 No 101, item 926 with futher amendments).
+\end{center}
+\end{document}
